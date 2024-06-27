@@ -1,0 +1,33 @@
+-- mate-utila --
+https://calculusmadeeasy.org/
+https://mml-book.github.io/book/mml-book.pdf
+
+-- python --
+https://colab.research.google.com/drive/1MFJSiUNrm83P2oM4JdVjsI7X198uApM5?usp=sharing (Intro Colab)
+https://colab.research.google.com/drive/13HW52Wset7S2Qg0keKfazTQUvQcF7vOQ?usp=sharing (Prea mult Python)
+https://www.pyml.ro/
+https://colab.research.google.com/github/Nyandwi/machine_learning_complete/blob/main/0_python_for_ml/intro_to_python.ipynb  (cu extra resurse la final) de la ioai-official
+
+-- deep learning --
+https://www.deeplearningbook.org/
+https://www.kaggle.com/learn
+
+** https://karpathy.github.io/neuralnets/ ** (reguli pentru DL)
+
+-- natural-language-processing -- 
+https://blog.insightdatascience.com/how-to-solve-90-of-nlp-problems-a-step-by-step-guide-fda605278e4e
+https://jalammar.github.io/illustrated-word2vec/
+https://web.stanford.edu/~jurafsky/slp3/
+https://gitlab.com/nitronlp/Workshops/-/tree/main (workshopuri nitronlp)
+
+-- computer-vision --
+https://szeliski.org/Book/
+https://www.youtube.com/watch?v=vT1JzLTH4G4
+
+-- transformers -- 
+https://www.youtube.com/watch?v=YtvlVnCBRO0
+https://jalammar.github.io/illustrated-transformer/
+https://bbycroft.net/llm
+
+
+
