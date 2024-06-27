@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts,amssymb}
+
+\begin{document}
+
+\section*{Problema 1}
+
+\section*{Solutie}
+
+a) Fie $d = \text{nr. de zone patratice de dimensiune } 16 \times 16 \text{ posibile}$ $(d = 256^{16 \times 16})$.\\
+Fie $\phi: X \rightarrow \mathbb{R}^d$, $\phi(x) = [\phi_{p_1}(x), \phi_{p_2}(x), \phi_{p_3}(x), \dots, \phi_{p_d}(x)]$, unde \\\\ $\phi_{p_k}(x) =
+\begin{cases}
+1 & \text{dacă } x \text{ conține zona patratica } p_k \\
+0 & \text{în caz contrar}
+\end{cases}$\\\\\\
+
+\noindent $\phi(x) \cdot \phi(x') = \sum_{i=1}^d \phi_{p_i}(x) \cdot \phi_{p_i}(x')$, care reprezintă numărul de zone patratice comune imaginii $x$ și $x' = \phi(x) \cdot \phi(x') = k_1(x, x')$ \\\\
+
+\noindent b) Fie $n = 3$ și $k_2(x_1, x_2) = 1, k_2(x_2, x_3) = 0 , k_2(x_1, x_3) = 1$ \\
+
+\noindent $G =
+\begin{bmatrix}
+k_2(x_1, x_1) & k_2(x_1, x_2) & k_2(x_1, x_3) \\
+k_2(x_2, x_1) & k_2(x_2, x_2) & k_2(x_2, x_3) \\
+k_2(x_3, x_1) & k_2(x_3, x_2) & k_2(x_3, x_3)
+\end{bmatrix} =
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & 1 & 0 \\
+1 & 0 & 1
+\end{bmatrix}$\\\\
+
+\noindent Fie $f =
+\begin{bmatrix}
+x \\ y \\ z
+\end{bmatrix}$, $x, y, z \in \mathbb{R}$\\
+$f^T G f =
+\begin{bmatrix}
+x & y & z
+\end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & 1 & 0 \\
+1 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\ y \\ z
+\end{bmatrix} =
+\begin{bmatrix}
+x & y & z
+\end{bmatrix}
+\begin{bmatrix}
+x + y + z \\ x + y \\ x + z
+\end{bmatrix} =
+x^2 + x y + x z + x y + y^2 + z^2 + z x$\\
+
+\noindent Fie $x = -1, y = 1, z = 1 \Rightarrow f^T G f = 1 - 1 - 1 - 1 + 1 + 1 - 1  = -1 \Rightarrow \exists f \in \mathbb{R}^3,$ astfel incat $f^T G f < 0$ (generalizarea se realizează prin inducție).
+
+\end{document}

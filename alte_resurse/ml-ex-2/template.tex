@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Problema 2}
+
+Solutie \\\\
+
+\noindent Vom afla $w^*$ calculând derivata parțială față de $w$ cu 0.
+
+\noindent \[
+\frac{\partial}{\partial w} \left( \frac{1}{m} \sum_{i=1}^{m} L(w^T x_i, y_i) + \frac{\lambda}{2} \|w\|^2 \right) = 0 \quad (1)
+\]
+
+\noindent \[
+\Rightarrow \frac{\partial}{\partial w} \left( \frac{1}{m} \sum_{i=1}^{m} L(w^T x_i, y_i) \right) + \lambda w = 0 \quad (2)
+\]
+
+\noindent \[
+\Rightarrow -\frac{1}{m} \sum_{i=1}^{m} \frac{\partial L}{\partial w} (w^T x_i, y_i) + \lambda w = 0 \quad (3)
+\]
+
+\noindent \[
+\Rightarrow \lambda w = \frac{1}{m} \sum_{i=1}^{m} \frac{\partial L}{\partial w} (w^T x_i, y_i) \quad (4)
+\]
+
+\noindent \[
+w^* = \frac{1}{\lambda m} \sum_{i=1}^{m} \frac{\partial L}{\partial w} (w^T x_i, y_i) \quad (5)
+\]
+
+\noindent \[
+\frac{\partial L}{\partial w} (w^T x_i, y_i) = \frac{\partial L}{\partial z} (w^T x_i) x_i \quad (6)
+\]
+
+\noindent \[
+\Rightarrow w^* = \frac{1}{\lambda m} \sum_{i=1}^{m} \frac{\partial L}{\partial z} (w^T x_i) x_i
+\]
+
+Q.E.D.
+
+\end{document}
